@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cart</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+   
+</head>
+<body>
+ <!-- section navbar -->
+ <header class="section-navbar">
+  <div class=" navbar-container grid grid-2--container">
+    <div class="logo-container" >
+      <img src="public/images/motor-wizard-high-resolution-logo.webp" alt="company logo" width="24%"/>
+    </div>
+    <div class="features-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <a href="addtocart.html"><button class="cart"> <i class="fa-solid fa-cart-shopping "></i>0</button></a>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- end of navbar -->
+
+    <!-- start dynamic cart cards -->
+   
+    <section class="cartproducts">
+      <section class="cartcontainer">
+        <!-- getting inside this div i.e trough js external api -->
+        <div id="cart-cont" >
+    
+        </div>
+      </section>
+      </section>
+    <!-- end of dynamiv card container -->
+
+
+    <!-- product template section -->
+
+    <template id="ct" data-aos="fade-up">
+        <div class="Cartcard" id="cardvalue">
+          <article class="information [card]">
+            <span class="category"></span>
+            <div class="imageContainer">
+              <img class="productimage" src="" alt="" width="30%"/>
+            </div>
+            <h2 class="productname"></h2>
+  
+            <p class="pdesicription"></p>
+            
+            <div class="productPriceElement">
+              <p class="productPrice"></p>
+              <p class="productActualPrice"></p>
+            </div>
+  
+            <div class="productStockElement">    
+              <p class="productStock"></p>
+            </div>
+            
+            
+            <div class="productQuantityElement">
+              <div class="StockElement">
+                <button class="cartIncrement">+</button>
+                <p class="prouctQuantity">1</p>
+                <button class="cartDecrement">-</button>
+              </div>
+            </div>
+  
+            <button class="add-to-cart-button remove-to-cart-button">Remove
+            </button>
+          </article>
+        </div>
+      </template>
+      <!-- end of car template -->
+  
+
+<!-- section  start of amount charges -->
+
+<section class="amountcharges" data-aos="fade-up">
+<div class="content-container">
+  <h2> Selected Offer Summary </h2>
+
+  <div class="st">
+    <span>Subtotal :</span>
+    <div class="sbcount">0</div>
+  </div>
+  <div class="tax">
+    <span>Tax :</span>
+    <div class="sbcount"> ₹ 50</div>
+  </div>
+  <hr>
+  <div class="ft">
+    <span>Final Total :</span>
+    <div class="fncount"> 0</div>
+  </div>
+</div>
+</section>
+
+
+  <!-- start of midbox -->
+<section class="midbox" data-aos="fade-up">
+  <div class="midbox-container  grid grid-2--container">
+    <div class="content-container">
+      <h1>Get membership at 50%</h1>
+      <span><li>Superfast Delivery</li></span>
+      <span><li>Get Early Access At Falsh Sales</li></span>
+    </div>
+    <div class="image-container">
+      <img src="public/images/lf image.jpg" alt="lf image" width="20%"/>
+    </div>
+  </div>
+</section>
+<!-- end of mid box -->
+
+<!-- start of footer -->
+<footer class="footer">
+  <div class="footer-container grid grid-4--cols">
+    <div class="footer-1--div">
+    <div class="social-handles" data-aos="fade-up">
+      <br>
+      <p>+91123456789</p>
+      <a href="https://www.linkedin.com/in/chirag-s-378351249/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/_chirag.s_/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCiXUf95oJAPJzMmktjFB7Vg" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://github.com/Chirag3s" target="_blank">
+          <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+    <div class="footer-2--div" data-aos="fade-up">
+      <div class="footer-subheading">
+          <ul>
+              <li class="first">Get to know us</li>
+              <li><a href="index.html">About us</a></li>
+              <li><a href="index.html">Careers</a></li>
+              <li><a href="index.html">MW History</a></li>
+              <li><a href="index.html">Press Realeases</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer-3--div" data-aos="fade-up">
+      <div class="footer-subheading">
+          <ul>
+              <li class="first">Let Us Help You</li>
+              <li><a href="index.html">Your Account</a></li>
+              <li><a href="index.html">Return Center</a></li>
+              <li><a href="index.html">100% Purchase Protection</a></li>
+              <li><a href="index.html">Help</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer-4--div" data-aos="fade-up">
+      <div class="footer-subheading">
+          <ul>
+              <li class="first">Avaliable in</li>
+              <li><a href="index.html">India</a></li>
+              <li><a href="index.html">US</a></li>
+              <li><a href="index.html">Spain</a></li>
+              <li><a href="index.html">Germany</a></li>
+          </ul>
+      </div>
+  </div>
+  </div>
+</footer>
+<!-- end of footer -->
+
+  <script type="module" src="showAddtoCartCard.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

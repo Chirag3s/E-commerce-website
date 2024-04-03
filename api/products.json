@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name":"MW Brake Fluid",
+        "category":"Fluids",
+        "brand":"M Wizard",
+        "price":130,
+        "stock":50,
+        "description":" MW 4 Premium Brake & Clutch Fluid 250 ml (For Disc & Drum Brake including ABS System,Hydraulic Clutch System)",
+        "image": "./public/images/bf.jpg"
+    },
+    {
+        "id":2,
+        "name":"MW  Mirror",
+        "category":"Mirror",
+        "brand":"M Wizard",
+        "price":739,
+        "stock":30,
+        "description":"MW Anti Glare Rear View Mirror for Car, Clip on Wide Angle Rearview Mirror Eliminate Blind Spots–Convex Frameless ",
+        "image": "../images/mrarmirrors.webp"
+    },
+    {
+        "id":3,
+        "name":"MW Windshield Washer",
+        "category":"Fluids",
+        "brand":"M Wizard",
+        "price":849,
+        "stock":50,
+        "description":"Car Windshield Cleaner Liquid In Concentrate Form (20mL Enough For 1L Tank)",
+        "image": "public/images/wwfluid.webp"
+    },
+    {
+        "id":4,
+        "name":"MW Smart Tyre Inflator",
+        "category":"Electronics",
+        "brand":"M Wizard",
+        "price":2890,
+        "stock":50,
+        "description":"Efficient : Fully inflate 2 car tires or top up car tires 8 times deliver i.e. 45.4% higher.",
+        "image": "../images/tinflator.jpg"
+    },
+    {
+        "id":5,
+        "name":"JK Tyre 215/60 R17",
+        "category":"Tyres",
+        "brand":"M Wizard",
+        "price":4000,
+        "stock":30,
+        "description":"Superior ride comfort High speed performance upto 210-240 km/hr",
+        "image": "../images/tyre.webp"
+    },
+    {
+        "id":6,
+        "name":"AGARO Vacuum",
+        "category":"Electronics",
+        "brand":"M Wizard",
+        "price":1384,
+        "stock":50,
+        "description":"Strong motor and powerful suction capacity which will suck out all kinds of dirt",
+        "image": "public/images/vaccum.jpg"
+    }
+]
